@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.logo {
+  font-family: "Playfair Display", serif;
+  color: rgb(44, 44, 44);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.nav > a {
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s ease-in;
+  color: rgb(44, 44, 44);
+  display: inline-block;
+  text-decoration: none;
+  margin: 20px;
+  padding: 3px;
+}
+.nav > a:hover {
+  border-bottom: 1px solid rgb(78, 78, 78);
+  color: rgb(78, 78, 78);
+}
+
+.hero {
+  background: linear-gradient(
+      to right bottom,
+      rgba(250, 249, 249, 0.8),
+      rgba(102, 102, 102, 0.4)
+    ),
+    url("../assets/images/hero-bg.jpg");
+  background-position: center;
+  padding: 2rem;
+  height: 80vh;
+}
+
+.hero__main-title {
+  font-family: "Playfair Display", serif;
+  color: rgb(44, 44, 44);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.personal-image {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.personal-image::before {
+  content: "";
+  position: absolute;
+  top: -120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(250, 249, 249, 0.8),
+    rgba(160, 159, 159, 0.877)
+  );
+  transition: all 0.5s ease-in;
+  transform: rotate(90deg);
+}
+
+.personal-image:hover::before {
+  transform: rotate(0);
+  top: 0;
+}
+.personal-image h2 {
+  position: absolute;
+  top: 50%;
+  right: -100%;
+  transform: translate(50%, -50%);
+  z-index: 1;
+  transition: all 1s ease-in-out;
+}
+.personal-image:hover h2 {
+  right: 50%;
+}
