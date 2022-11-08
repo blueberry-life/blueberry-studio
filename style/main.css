@@ -24,6 +24,7 @@ body {
 }
 .nav {
   display: flex;
+  column-gap: 3rem;
 }
 .nav > a {
   border-bottom: 1px solid transparent;
@@ -32,11 +33,13 @@ body {
   display: inline-block;
   text-decoration: none;
   padding: 3px;
-  margin-right: 30px;
 }
 .nav > a:hover {
   border-bottom: 1px solid rgb(78, 78, 78);
   color: rgb(78, 78, 78);
+}
+.nav a:last-child {
+  margin-right: 3rem;
 }
 
 .hero {
