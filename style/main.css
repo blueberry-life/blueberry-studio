@@ -10,6 +10,11 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .logo {
   font-family: "Playfair Display", serif;
   color: rgb(44, 44, 44);
@@ -17,15 +22,17 @@ body {
   font-weight: 700;
   font-size: 2rem;
 }
-
+.nav {
+  display: flex;
+}
 .nav > a {
   border-bottom: 1px solid transparent;
   transition: all 0.5s ease-in;
   color: rgb(44, 44, 44);
   display: inline-block;
   text-decoration: none;
-  margin: 20px;
   padding: 3px;
+  margin-right: 30px;
 }
 .nav > a:hover {
   border-bottom: 1px solid rgb(78, 78, 78);
